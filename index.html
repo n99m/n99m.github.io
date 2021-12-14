@@ -1,67 +1,483 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  
-    <link rel="preload" href="./fonts/Consolas.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="preload" href="./fonts/ArnoPro-Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/ArnoPro-Italic.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/ArnoPro-Bold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./fonts/ArnoPro-BoldItalic.woff2" as="font" type="font/woff2" crossorigin />
+<head>
 
-    <!-- <link rel="preload" href="/fonts/Consolas.woff" as="font" type="font/woff" crossorigin> -->
+  <link rel="preload" href="./fonts/Consolas.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Med.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-MedIt.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Bd.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-BdIt.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="preload" href="./fonts/ArnoPro-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/ArnoPro-Italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/ArnoPro-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/ArnoPro-BoldItalic.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Med.woff" as="font" type="font/woff" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-MedIt.woff" as="font" type="font/woff" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Bd.woff" as="font" type="font/woff" crossorigin> -->
-    <!-- <link rel="preload" href="/fonts/GaramondPremrPro-BdIt.woff" as="font" type="font/woff" crossorigin> -->
-    <link href="./css/default.css" rel="stylesheet" />
-    <title>
-      Welcome to Hegel's Chapel — Hegel's Chapel
-    </title>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png?v=NmaAGp8Gq2" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png?v=NmaAGp8Gq2" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png?v=NmaAGp8Gq2" />
-    <link rel="manifest" href="./images/favicons/site.webmanifest?v=NmaAGp8Gq2" />
-    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg?v=NmaAGp8Gq2" color="#5bbad5" />
-    <link rel="shortcut icon" href="./images/favicons/favicon.ico?v=NmaAGp8Gq2" />
-    <meta name="apple-mobile-web-app-title" content="Hegel's Chapel" />
-    <meta name="application-name" content="Hegel's Chapel" />
-    <meta name="msapplication-TileColor" content="#b0aba9" />
-    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml?v=NmaAGp8Gq2" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="description" content="A weblog by Coleman Gariety." />
-      
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for hegelsbagels.net" href="./rss.xml" />
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed for hegelsbagels.net" href="./atom.xml" />
-  </head>
-  <body>
+  <!-- <link rel="preload" href="/fonts/Consolas.woff" as="font" type="font/woff" crossorigin> -->
 
-    <header>
-      <a href="./" id="logo">Hegel's Chapel</a>
-      <a href="javascript:;" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Med.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-MedIt.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Bd.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-BdIt.woff2" as="font" type="font/woff2" crossorigin> -->
+
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Med.woff" as="font" type="font/woff" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-MedIt.woff" as="font" type="font/woff" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-Bd.woff" as="font" type="font/woff" crossorigin> -->
+  <!-- <link rel="preload" href="/fonts/GaramondPremrPro-BdIt.woff" as="font" type="font/woff" crossorigin> -->
+  <link href="./css/default.css" rel="stylesheet" />
+  <title>
+    Welcome to Hegel's Chapel — Hegel's Chapel
+  </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png?v=NmaAGp8Gq2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png?v=NmaAGp8Gq2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png?v=NmaAGp8Gq2" />
+  <link rel="manifest" href="./images/favicons/site.webmanifest?v=NmaAGp8Gq2" />
+  <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg?v=NmaAGp8Gq2" color="#5bbad5" />
+  <link rel="shortcut icon" href="./images/favicons/favicon.ico?v=NmaAGp8Gq2" />
+  <meta name="apple-mobile-web-app-title" content="Hegel's Chapel" />
+  <meta name="application-name" content="Hegel's Chapel" />
+  <meta name="msapplication-TileColor" content="#b0aba9" />
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml?v=NmaAGp8Gq2" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="A weblog by Coleman Gariety." />
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for hegelsbagels.net" href="./rss.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed for hegelsbagels.net" href="./atom.xml" />
+</head>
+
+<body>
+
+  <header>
+    <a href="./" id="logo">Hegel's Chapel</a>
+    <a href="javascript:;" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
+    <div class="rest">
+      <blockquote>
+        <div>
+          &ldquo;The image of true infinity becomes the bagel, the breadstick
+          that has reached itself...&rdquo;
+        </div>
+        <div>— G.W.F. Hegel</div>
+      </blockquote>
+      <nav>
+        <div><a href="./">Home</a></div>
+        <div><a href="./about/">About</a></div>
+        <div><a href="./contact/">Contact</a></div>
+        <div><a href="./thesis/">Thesis</a></div>
+        <div><a href="./archive/">Archive</a></div>
+        <div><a href="./lexicon/">Lexicon</a></div>
+      </nav>
+      <br />
+      Feed: <a href="./rss.xml">RSS</a> /
+      <a href="./atom.xml">Atom</a>
+      <br />
+      <br />
+      <div class="desktop-only">
+        Monthly Newsletter<br />(join 180+ subscribers):
+        <form class="mailingList" onsubmit="return false;">
+          <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
+          <button type="submit">Join</button>
+        </form>
+
+        <br />
+      </div>
+      <!-- <br /> -->
+      <!-- <br /> -->
+      <!-- Twitter: <a href="https://twitter.com/colemangariety">@colemangariety</a> -->
+      <hr />
+      <br />
+      Blogroll:
+      <br />
+      <ul class="no-bullets" id="blogroll">
+        <li><a href="https://gnosticismexplained.org/">Gnosticism Explained</a></li>
+        <li><a href="http://www.ascensionhelp.com/blog/">Ascension Help</a></li>
+        <li><a href="https://www.youtube.com/channel/UCoydhtfFSk1fZXNRnkGnneQ">Esoterica</li>
+        <li><a href="https://unlimitedhangout.com/">Unlimited Hangout</a></li>
+        <li><a href="https://maverickphilosopher.typepad.com/">Maverick Philosopher</a></li>
+        <li><a href="https://zizekanalysis.wordpress.com/">Žižekian Analysis</a></li>
+        <li><a href="https://larvalsubjects.wordpress.com/">Larval Subjects</a></li>
+
+      </ul>
+    </div>
+    <div class="mobile-only">
+      <br />
+      Monthly Newsletter<br />(join 180+ subscribers):
+      <form class="mailingList" onsubmit="return false;">
+        <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
+        <button type="submit">Join</button>
+      </form>
+
+    </div>
+  </header>
+
+  <div id="main-and-aside">
+    <main role="main">
+      <h1>Welcome to Hegel's Chapel</h1>
+      <style>
+        #fig {
+          width: 200px;
+          float: right;
+          padding-left: 15px;
+          padding-bottom: 15px;
+        }
+
+        @media only screen and (max-width: 667px) {
+          #fig {
+            width: 150px;
+          }
+        }
+      </style>
+
+      <!-- <img src="/images/hegels_bagels.png" alt="Hegel's Bagels" id="fig" /> -->
+
+      <img src="./images/hunt_light_of_the_world.jpg" alt="Hegel's Chapel" id="fig" />
+
+      <p>A weblog by Coleman "Little Dove" Gariety.</p>
+
+      <blockquote>
+        <p>Hegel’s Chapel faithfully and lovingly continues the Hegelian project of demonstrating that the activity of
+          spirit, the movement of the idea through history, can be known and understood by reason. We cast the light of
+          reason on the respiration of history, causing it to shine.</p>
+      </blockquote>
+
+      <!-- <h3>Username & Password <img src="/images/password.gif" height="25" style="vertical-align: text-bottom;" /></h3> -->
+
+      <!-- <p>This blog <b>no longer</b> uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a>. Feel free to share my writing on social media, etc.️</p> -->
+
+      <!-- <p>This blog uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a>. The username is <code style="font-size: 13px;">plato</code> and the password is <code style="font-size: 13px;">academy</code>.</p> -->
+
+      <h3>Recent Posts</h3>
+      <ul>
+
+        <li>
+          <a href="./posts/sinclair-script-for-stations/">"This is extremely dangerous to our democracy."</a> - December
+          8, 2021 at 11:45 PM
+        </li>
+
+        <li>
+          <a href="./posts/cursory-intro-to-idealism/">Cursory Introduction to Idealism</a> - December 8, 2021 at 8:43
+          PM
+        </li>
+
+        <li>
+          <a href="./posts/dialectical-solution-to-the-liar-paradox/">Dialectical Solution to the Liar Paradox</a> -
+          September 14, 2021 at 12:50 PM
+        </li>
+
+        <li>
+          <a href="./posts/what-is-happening/">What Is Happening</a> - September 5, 2021 at 2:54 PM
+        </li>
+
+        <li>
+          <a href="./posts/what-is-happening-to-slavoj-zizek/">Limits of Liberalism I: What is happening to Slavoj
+            Žižek?</a> - August 1, 2021 at 1:12 PM
+        </li>
+
+      </ul>
+
+
+      <p>…or you can find more in the <a href="./archive/">archive</a>.</p>
+
+      <div class="mobile-only">
+        <h3 id="blogroll">Blogroll</h3>
+
+        <ul>
+          <li><a href="https://gnosticismexplained.org/">Gnosticism Explained</a></li>
+          <li><a href="http://www.ascensionhelp.com/blog/">Ascension Help</a></li>
+          <li><a href="https://www.youtube.com/channel/UCoydhtfFSk1fZXNRnkGnneQ">Esoterica</li>
+          <li><a href="https://unlimitedhangout.com/">Unlimited Hangout</a></li>
+          <li><a href="https://maverickphilosopher.typepad.com/">Maverick Philosopher</a></li>
+          <li><a href="https://zizekanalysis.wordpress.com/">Žižekian Analysis</a></li>
+          <li><a href="https://larvalsubjects.wordpress.com/">Larval Subjects</a></li>
+
+        </ul>
+
+        <p>Should I include your blog here? <a href="mailto:coleman.hegelsbagels@gmail.com" target="_new">Let me
+            know.</a></p>
+
+      </div>
+
+      <h3>Essential Books</h3>
+
+      <style>
+        .books a {
+          text-decoration: none;
+        }
+
+        .books img {
+          height: 180px;
+          width: 120px;
+        }
+      </style>
+
+      <h4>Master Key to the Universe</h4>
+
+      <a
+        href="https://www.cambridge.org/us/academic/subjects/philosophy/nineteenth-century-philosophy/georg-wilhelm-friedrich-hegel-science-logic">
+        <img src="https://m.media-amazon.com/images/I/41-bH42ZxCL.jpg"
+          alt="The Science of Logic by Georg Wilhelm Friedrich Hegel" style="height: 243px; width: 162px;" />
       </a>
-      <div class="rest">
-        <blockquote>
-          <div>
-            &ldquo;The image of true infinity becomes the bagel, the breadstick
-            that has reached itself...&rdquo;
-          </div>
-          <div>— G.W.F. Hegel</div>
-        </blockquote>
+
+      <h4>Secondary Literature on Hegel</h4>
+
+      <div class="books">
+        <a href="https://press.uchicago.edu/ucp/books/book/chicago/I/bo16382279.html">
+          <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/71/9780226717647.jpg"
+            alt="The Idea of Hegel’s Science of Logic by Stanley Rosen" />
+        </a>
+        <a href="http://www.thepress.purdue.edu/titles/format/9781557532572">
+          <img src="./images/houlgate.jpg" alt="The Opening of Hegel's Logic by Stephen Houlgate" />
+        </a>
+        <a
+          href="https://www.cambridge.org/core/books/analytic-philosophy-and-the-return-of-hegelian-thought/CF8B127618B9BA8E6C8C49C4F01F37F5">
+          <img src="https://m.media-amazon.com/images/P/0521172349.01._SCLZZZZZZZ_SX500_.jpg"
+            alt="Analytic Philosophy and the Return of Hegelian Thought by Paul Redding" />
+        </a>
+        <a href="https://nupress.northwestern.edu/9780810143760/hegels-anthropology/">
+          <img src="https://northwest-press-us.imgix.net/covers/9780810143760.jpg?auto=format&w=298&dpr=2&q=20"
+            alt="Hegel's Anthropology: Life, Psyche, and Second Nature by Allegra de Laurentiis" />
+        </a>
+        <a href="https://www.cornellpress.cornell.edu/book/9780801438721/hegel-and-the-hermetic-tradition/#bookTabs=1">
+          <img src="https://m.media-amazon.com/images/P/0801474507.01._SCLZZZZZZZ_SX500_.jpg"
+            alt="Hegel andthe Hermetic Tradition by Glenn Alexander Magee">
+        </a>
+        <!-- <a href="https://www.sunypress.edu/p-1886-the-heterodox-hegel.aspx"> -->
+        <!--   <img src="https://www.sunypress.edu/images/Product/large/52970_cov.jpg" alt="The Heterodox Hegel by Cyril O'Regan"> -->
+        <!-- </a> -->
+        <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo29203261.html"> -->
+        <!--   <img src="https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/70/9780226703411.jpg/jcr:content/9780226703411.jpg" alt="Hegel's Realm of Shadows by Robert Pippin" /> -->
+        <!-- </a> -->
+      </div>
+
+      <h4>Ancient Philosophy and Christianity</h4>
+
+      <div class="books">
+        <a href="https://www.hackettpublishing.com/philosophy/complete-works">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51MzSp6UPlL._SX331_BO1,204,203,200_.jpg"
+            alt="The Complete Works of Plato, translated by John M. Cooper" />
+        </a>
+        <a href="https://press.princeton.edu/books/hardcover/9780691016504/complete-works-of-aristotle-volume-1">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41QaR-1bbfL._SX329_BO1,204,203,200_.jpg"
+            alt="Complete Works of Aristotle, Volume One, edited by Jonathan Barnes" />
+        </a>
+        <a href="https://press.princeton.edu/books/hardcover/9780691016511/complete-works-of-aristotle-volume-2">
+          <img src="https://m.media-amazon.com/images/I/41M+9T7ZHsL.jpg"
+            alt="Complete Works of Aristotle, Volume Two, edited by Jonathan Barnes" />
+        </a>
+        <a href="https://global.oup.com/academic/product/the-new-oxford-annotated-bible-with-apocrypha-9780190276072">
+          <img src="https://fdslive.oup.com/covers/gab/550-550-72-jpg-RGB-85/9780190276072.jpg"
+            alt="The New Oxford Annotated Bible with Apocrypha" />
+        </a>
+        <a href="https://www.shambhala.com/the-gnostic-bible-647.html">
+          <img
+            src="https://www.shambhala.com/media/fishpig/webp/catalog/product/optimized/4/3/43ee043b7799edb0e4b6573eae5b803bd24dfd5f4c7b807af76ab86af870bd2e/9781590306314.webp"
+            alt="The Gnostic Bible, edited by Barnstone & Meyer" />
+        </a>
+        <a href="https://www.cambridge.org/us/academic/subjects/philosophy/philosophy-texts/plotinus-enneads?format=HB">
+          <img src="https://m.media-amazon.com/images/P/1107001773.01._SCLZZZZZZZ_SX500_.jpg"
+            alt="The Enneads by Plotinus" />
+        </a>
+        <a href="https://global.oup.com/academic/product/the-elements-of-theology-9780198140979?cc=us&lang=en&">
+          <img src="https://fdslive.oup.com/covers/gab/550-550-72-jpg-RGB-85/9780198140979.jpg"
+            alt="Elements of Theology by Proclus" />
+        </a>
+      </div>
+
+      <h4>Modern Philosophy</h4>
+
+      <div class="books">
+        <a
+          href="https://www.cambridge.org/core/books/philosophical-writings-of-descartes/618B16C4C0116CBB0B39211F93E2BCB3">
+          <img src="https://assets.cambridge.org/97805212/88088/cover/9780521288088.jpg"
+            alt="The Philosophical Writings of Descartes, Volume II, translated by John Cottingham, Robert Stoothoff, and Dugald Murdoch" />
+        </a>
+        <a href="https://www.hackettpublishing.com/philosophy/three-dialogues-between-hylas-and-philonous">
+          <img src="https://pictures.abebooks.com/inventory/4432106376.jpg"
+            alt="Three Dialogues Between Hylas and Philonous by George Berkeley" />
+        </a>
+        <a href="https://www.cambridge.org/core/books/critique-of-pure-reason/259C2355B74458963EC285F53337AAF0">
+          <img src="https://assets.cambridge.org/97805216/57297/cover/9780521657297.jpg"
+            alt="Critique of Pure Reason by Immanuel Kant" />
+        </a>
+        <a
+          href="https://www.cambridge.org/core/books/critique-of-the-power-of-judgment/3705CD4E7C5C7B1CE079AFA9B924122E">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41f-iYqv9ML._SX331_BO1,204,203,200_.jpg"
+            alt="Critique of the Power of Judgment by Immanuel Kant" />
+        </a>
+        <!-- <a href="https://www.nebraskapress.unl.edu/university-of-nebraska-press/9780803272712/"> -->
+        <!--   <img src="https://unebraskapress-us.imgix.net/covers/9780803272712.jpg?auto=format&w=298" alt="Lectures on the History of Philosophy by Georg Wilhelm Friedrich Hegel" /> -->
+        <!-- </a> -->
+        <a
+          href="https://www.cambridge.org/gb/academic/subjects/philosophy/nineteenth-century-philosophy/georg-wilhelm-friedrich-hegel-encyclopedia-philosophical-sciences-basic-outline-part-1">
+          <img src="https://assets.cambridge.org/97805218/29144/cover/9780521829144.jpg"
+            alt="Encyclopedia of the Philosophical Sciences in Basic Outline, Part I: Science of Logic by Georg Wilhelm Friedrich Hegel" />
+        </a>
+        <a href="https://global.oup.com/academic/product/hegels-philosophy-of-nature-9780199272679">
+          <img src="https://fdslive.oup.com/covers/gab/180-0-72-jpg-RGB-85/9780199272679.jpg"
+            alt="Hegel's Philosophy of Nature by Georg Wilhelm Friedrich Hegel" />
+        </a>
+        <a
+          href="https://www.oxfordscholarlyeditions.com/view/10.1093/actrade/9780199299515.book.1/actrade-9780199299515-book-1">
+          <img src="https://www.oxfordscholarlyeditions.com/view/covers/9780199299515.jpg"
+            alt="Hegel's Philosophy of Mind by Georg Wilhelm Friedrich Hegel" />
+        </a>
+        <a
+          href="https://www.cambridge.org/highereducation/books/hegel-elements-of-the-philosophy-of-right/09AE6110FE96266A206924435BAF85C5#overview">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41kquZAfzIL.jpg"
+            alt="Elements of the Philosophy of Right by Georg Wilhelm Friedrich Hegel" />
+        </a>
+      </div>
+
+      <h4>School of Suspicion</h4>
+      <div class="books">
+        <!-- <a href="https://www.intpubnyc.com/product/capital-the-process-of-capitalist-production-vol-01/"> -->
+        <!--   <img src="https://www.lwbooks.co.uk/sites/default/files/styles/product_image/public/cover-image/9780853159797.jpg?itok=wjdXS_cJ" alt="Capital Vol. 1 by Karl Marx" /> -->
+        <!-- </a> -->
+        <a href="https://wwnorton.com/books/9780393090406">
+          <img src="https://cdn.wwnorton.com/dam_booktitles/604/img/cover/9780393090406_300.jpeg"
+            alt="The Marx-Engels Reader" />
+        </a>
+        <a href="https://www.penguinrandomhouse.com/books/121929/basic-writings-of-nietzsche-by-friedrich-nietzsche">
+          <img src="https://images2.penguinrandomhouse.com/cover/9780679783398"
+            alt="Basic Writings of Nietzsche, translated by Walter Kaufmann" />
+        </a>
+        <a href="https://www.penguinrandomhouse.com/books/321142/the-portable-nietzsche-by-friedrich-nietzsche/">
+          <img src="https://images2.penguinrandomhouse.com/cover/9780140150629"
+            alt="The Portable Nietzsche, translated by Walter Kaufmann" />
+        </a>
+        <!-- <a href="https://www.penguinrandomhouse.ca/series/CPW/the-complete-psychological-works-of-sigmund-freud"> -->
+        <!--   <img src="https://images.randomhouse.com/cover/9780099426523" alt="The Complete Psychological Works of Sigmund Freud" /> -->
+        <!-- </a> -->
+        <a href="https://wwnorton.com/books/9780393314038">
+          <img src="https://cdn.wwnorton.com/dam_booktitles/830/img/cover/9780393314038_300.jpeg"
+            alt="The Freud Reader, edited by Peter Gay" />
+        </a>
+        <a href="https://www.harpercollins.com/products/being-and-time-martin-heidegger?variant=32154071597090">
+          <img src="./images/being-and-time.jpg"
+            alt="Being and Time by Martin Heidegger, translated by John Macquarrie and Edward Robinson" />
+        </a>
+        <a href="https://wwnorton.com/books/9780393329254">
+          <img src="https://cdn.wwnorton.com/dam_booktitles/452/img/cover/9780393329254_300.jpeg"
+            alt="Écrits by Jacques Lacan, translated by Bruce Fink" />
+        </a>
+        <a href="https://press.uchicago.edu/ucp/books/book/chicago/W/bo27619783.html">
+          <img src="./images/writing_and_difference.jpg" alt="Writing and Difference by Jacques Derrida" />
+        </a>
+        <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo24847024.html"> -->
+        <!--   <img src="/images/margins_of_philosophy.png" alt="Margins of Philosophy by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <a href="https://press.uchicago.edu/ucp/books/book/chicago/D/bo27619136.html">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41q6PtPloiL._SX331_BO1,204,203,200_.jpg"
+            alt="Dissemination by Jacques Derrida" />
+        </a>
+        <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/G/bo27619208.html"> -->
+        <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226502977.jpg" alt="The Gift of Death by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.versobooks.com/books/3721-the-politics-of-friendship"> -->
+        <!--   <img src="https://cdn-ed.versobooks.com/images/000015/505/9781788738590-6684da65f98f3d21af45c61c3b1e590c.jpg" alt="Politics of Friendship by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/G/bo27619298.html"> -->
+        <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226504315.jpg" alt="Given Time: I. Counterfeit Money by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.sup.org/books/title/?id=2568"> -->
+        <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2568.jpg" alt="Aporias by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/A/bo27619045.html"> -->
+        <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226502359.jpg" alt="Archive Fever by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.sup.org/books/title/?id=2569"> -->
+        <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2569.jpg" alt="Points...: Interviews, 1974-1994 by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.fordhampress.com/9780823227914/the-animal-that-therefore-i-am/"> -->
+        <!--   <img src="https://fordhampress-us.imgix.net/covers/9780823227914.jpg?auto=format&w=298" alt="The Animal That Therefore I Am by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.sup.org/books/title/?id=6908"> -->
+        <!--   <img src="https://www.sup.org/img/covers/med_large/pid_6908.jpg" alt="Rogues: Two Essays on Reason by Jacques Derrida" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.fordhampress.com/9780823228751/derrida-vis-a-vis-lacan/"> -->
+        <!--   <img src="https://fordhampress-us.imgix.net/covers/9780823228751.jpg?auto=format&w=298" alt="Derrida Vis-à-vis Lacan: Interweaving Deconstruction and Psychoanalysis by Andrea Hurst" /> -->
+        <!-- </a> -->
+      </div>
+      <h4>Rational Conspiracy</h4>
+      <div class="books">
+        <!-- <a href="https://www.sunypress.edu/p-2019-being-and-the-between.aspx"> -->
+        <!--   <img src="https://www.sunypress.edu/images/Product/large/53103_cov.jpg" alt="Being and the Between by William Desmond" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://mitpress.mit.edu/books/parallax-view"> -->
+        <!--   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/The_Parallax_View_cover.jpg" alt="The Parallax View by Slavoj Žižek" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.wiley.com/en-us/Decadence+of+Industrial+Democracies-p-9780745648101"> -->
+        <!--   <img src="https://media.wiley.com/product_data/coverImage300/96/07456480/0745648096.jpg" alt="Decadence of Industrial Democracies by Bernard Stiegler" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.wiley.com/en-us/Liquid+Modernity-p-9780745624099"> -->
+        <!--   <img src="https://media.wiley.com/product_data/coverImage300/9X/07456240/074562409X.jpg" alt="Liquid Modernity by Zygmunt Bauman" /> -->
+        <!-- </a> -->
+        <a href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41ySrRF+tXL._SX331_BO1,204,203,200_.jpg"
+            alt="Industrial Society and Its Future by Theodore Kaczynski">
+        </a>
+        <!--  <a href="https://www.versobooks.com/books/1523-less-than-nothing"> -->
+        <!--    <img src="https://cdn-ed.versobooks.com/images/000002/721/Verso_9781844678976_Less_Than_Nothing__300dpi_CMYK__Site-e82b500ae67a190707584b92b703e7de.jpeg" alt="Less Than Nothing -->
+        <!-- by Slavoj Žižek" /> -->
+        <!--  </a> -->
+        <!-- <a href="https://www.wiley.com/en-us/Decadence+of+Industrial+Democracies-p-9780745648101"> -->
+        <!--   <img src="https://media.wiley.com/product_data/coverImage300/96/07456480/0745648096.jpg" alt="Decadence of Industrial Democracies: Disbelief and Discredit by Bernard Stiegler" /> -->
+        <!-- </a> -->
+        <a
+          href="https://www.wiley.com/en-us/Uncontrollable+Societies+of+Disaffected+Individuals%3A+Disbelief+and+Discredit%2C+Volume+2-p-9780745648125">
+          <img src="https://media.wiley.com/product_data/coverImage300/18/07456481/0745648118.jpg"
+            alt="Uncontrollable Societies of Disaffected Individuals: Disbelief and Discredit by Bernard Stiegler" />
+        </a>
+        <!-- <a href="https://www.wiley.com/en-us/The+Lost+Spirit+of+Capitalism%3A+Disbelief+and+Discredit%2C+Volume+3-p-9780745648149"> -->
+        <!--   <img src="https://media.wiley.com/product_data/coverImage300/34/07456481/0745648134.jpg" alt="The Lost Spirit of Capitalism: Disbelief and Discredit, Volume 3 by Bernard Stiegler" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://yalebooks.yale.edu/book/9780300240023/why-liberalism-failed"> -->
+        <!--   <img src="https://yalebooks.yale.edu/sites/default/files/styles/book_jacket/public/imagecache/external/48d352398cf845a08551235085779d9c.jpg" alt="Why Liberalism Failed by Patrick Deneen" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://global.oup.com/academic/product/hegels-concept-of-life-9780190947613"> -->
+        <!--   <img src="https://fdslive.oup.com/covers/gab/180-0-72-jpg-RGB-85/9780190947613.jpg" alt="Hegel's Concept of Life by Karen Ng" /> -->
+        <!-- </a> -->
+        <!-- <a href="https://www.wiley.com/en-us/The+Lost+Spirit+of+Capitalism%3A+Disbelief+and+Discredit%2C+Volume+3-p-9780745648149"> -->
+        <!--   <img src="https://media.wiley.com/product_data/coverImage300/34/07456481/0745648134.jpg" alt="The Lost Spirit of Capitalism: Disbelief and Discredit by Bernard Stiegler" /> -->
+        <!-- </a> -->
+        <a href="https://www.versobooks.com/books/2001-absolute-recoil">
+          <img src="https://cdn-ed.versobooks.com/images/000005/724/9781784781996-fa84cec045022711da74fd8eb05561f1.jpg"
+            alt="Absolute Recoil by Slavoj Žižek" />
+        </a>
+        <!-- <a href="https://www.sup.org/books/title/?id=2003"> -->
+        <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2003.jpg" alt="Homo Sacer: Sovereign Power and Bare Life by Giorgio Agamben" /> -->
+        <!-- </a> -->
+        <a href="https://rowman.com/ISBN/9781538157596/Where-Are-We-Now-The-Epidemic-as-Politics">
+          <img src="https://rowman.com/L/15/381/9781538157596.jpg" alt="Where Are We Now? by Giorgio Agamben" />
+        </a>
+        <a
+          href="https://shop.davidicke.com/us/product/everything-you-need-to-know-but-have-never-been-told-by-david-icke/">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/518RXsNGZ6L.jpg"
+            alt="Everything You Need To Know But Have Never Been Told By David Icke" />
+        </a>
+        <a
+          href="https://childrenshealthdefense.org/store/the-real-anthony-fauci-big-pharmas-global-war-on-democracy-humanity-and-public-health/">
+          <img
+            src="https://childrenshealthdefense.org/wp-content/uploads/real-anthony-fauci-book-robert-f-kennedy-jr.jpg"
+            alt="The Real Anthony Fauci By Robert F. Kennedy, Jr." />
+        </a>
+      </div>
+      <br />
+
+    </main>
+    <footer>
+      <hr />
+      <br />
+      <div id="bottomMsg">
+        Don't forget to subscribe to the newsletter in the navigation menu!
+      </div>
+      <div id="bottomNav">
+        <div>Don't forget to subscribe to the newsletter below!</div>
+        <br />
         <nav>
           <div><a href="./">Home</a></div>
           <div><a href="./about/">About</a></div>
@@ -73,379 +489,20 @@
         <br />
         Feed: <a href="./rss.xml">RSS</a> /
         <a href="./atom.xml">Atom</a>
-        <br />
-        <br />
-        <div class="desktop-only">
-          Monthly Newsletter<br />(join 180+ subscribers):
-<form class="mailingList" onsubmit="return false;">
-  <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
-  <button type="submit">Join</button>
-</form>
-
-          <br />
-        </div>
         <!-- <br /> -->
         <!-- <br /> -->
         <!-- Twitter: <a href="https://twitter.com/colemangariety">@colemangariety</a> -->
-        <hr />
         <br />
-        Blogroll:
-        <br />
-        <ul class="no-bullets" id="blogroll">
-          <li><a href="https://gnosticismexplained.org/">Gnosticism Explained</a></li>
-<li><a href="http://www.ascensionhelp.com/blog/">Ascension Help</a></li>
-<li><a href="https://www.youtube.com/channel/UCoydhtfFSk1fZXNRnkGnneQ">Esoterica</li>
-<li><a href="https://unlimitedhangout.com/">Unlimited Hangout</a></li>
-<li><a href="https://maverickphilosopher.typepad.com/">Maverick Philosopher</a></li>
-<li><a href="https://zizekanalysis.wordpress.com/">Žižekian Analysis</a></li>
-<li><a href="https://larvalsubjects.wordpress.com/">Larval Subjects</a></li>
-
-        </ul>
-      </div>
-      <div class="mobile-only">
         <br />
         Monthly Newsletter<br />(join 180+ subscribers):
-<form class="mailingList" onsubmit="return false;">
-  <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
-  <button type="submit">Join</button>
-</form>
+        <form class="mailingList" onsubmit="return false;">
+          <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
+          <button type="submit">Join</button>
+        </form>
 
       </div>
-    </header>
+    </footer>
+  </div>
+</body>
 
-    <div id="main-and-aside">
-      <main role="main">
-        <h1>Welcome to Hegel's Chapel</h1>
-        <style>
-  #fig {
-    width: 200px;
-    float: right;
-    padding-left: 15px;
-    padding-bottom: 15px;
-  }
-  @media only screen and (max-width: 667px) {
-    #fig {
-      width: 150px;
-    }
-  }
-</style>
-
-<!-- <img src="/images/hegels_bagels.png" alt="Hegel's Bagels" id="fig" /> -->
-
-<img src="./images/hunt_light_of_the_world.jpg" alt="Hegel's Chapel" id="fig" />
-
-<p>A weblog by Coleman "Little Dove" Gariety.</p>
-
-<blockquote><p>Hegel’s Chapel faithfully and lovingly continues the Hegelian project of demonstrating that the activity of spirit, the movement of the idea through history, can be known and understood by reason. We cast the light of reason on the respiration of history, causing it to shine.</p></blockquote>
-
-<!-- <h3>Username & Password <img src="/images/password.gif" height="25" style="vertical-align: text-bottom;" /></h3> -->
-
-<!-- <p>This blog <b>no longer</b> uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a>. Feel free to share my writing on social media, etc.️</p> -->
-
-<!-- <p>This blog uses <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a>. The username is <code style="font-size: 13px;">plato</code> and the password is <code style="font-size: 13px;">academy</code>.</p> -->
-
-<h3>Recent Posts</h3>
-<ul>
-    
-        <li>
-            <a href="./posts/sinclair-script-for-stations/">"This is extremely dangerous to our democracy."</a> - December  8, 2021 at 11:45 PM
-        </li>
-    
-        <li>
-            <a href="./posts/cursory-intro-to-idealism/">Cursory Introduction to Idealism</a> - December  8, 2021 at  8:43 PM
-        </li>
-    
-        <li>
-            <a href="./posts/dialectical-solution-to-the-liar-paradox/">Dialectical Solution to the Liar Paradox</a> - September 14, 2021 at 12:50 PM
-        </li>
-    
-        <li>
-            <a href="./posts/what-is-happening/">What Is Happening</a> - September  5, 2021 at  2:54 PM
-        </li>
-    
-        <li>
-            <a href="./posts/what-is-happening-to-slavoj-zizek/">Limits of Liberalism I: What is happening to Slavoj Žižek?</a> - August  1, 2021 at  1:12 PM
-        </li>
-    
-</ul>
-
-
-<p>…or you can find more in the <a href="./archive/">archive</a>.</p>
-
-<div class="mobile-only">
-  <h3 id="blogroll">Blogroll</h3>
-
-  <ul>
-    <li><a href="https://gnosticismexplained.org/">Gnosticism Explained</a></li>
-<li><a href="http://www.ascensionhelp.com/blog/">Ascension Help</a></li>
-<li><a href="https://www.youtube.com/channel/UCoydhtfFSk1fZXNRnkGnneQ">Esoterica</li>
-<li><a href="https://unlimitedhangout.com/">Unlimited Hangout</a></li>
-<li><a href="https://maverickphilosopher.typepad.com/">Maverick Philosopher</a></li>
-<li><a href="https://zizekanalysis.wordpress.com/">Žižekian Analysis</a></li>
-<li><a href="https://larvalsubjects.wordpress.com/">Larval Subjects</a></li>
-
-  </ul>
-
-  <p>Should I include your blog here? <a href="mailto:coleman.hegelsbagels@gmail.com" target="_new">Let me know.</a></p>
-
-</div>
-
-<h3>Essential Books</h3>
-
-<style>
- .books a {
-   text-decoration: none;
- }
- .books img {
-   height: 180px;
-   width: 120px;
- }
-</style>
-
-<h4>Master Key to the Universe</h4>
-
-<a href="https://www.cambridge.org/us/academic/subjects/philosophy/nineteenth-century-philosophy/georg-wilhelm-friedrich-hegel-science-logic">
-  <img src="https://m.media-amazon.com/images/I/41-bH42ZxCL.jpg" alt="The Science of Logic by Georg Wilhelm Friedrich Hegel" style="height: 243px; width: 162px;" />
-</a>
-
-<h4>Secondary Literature on Hegel</h4>
-
-<div class="books">
-  <a href="https://press.uchicago.edu/ucp/books/book/chicago/I/bo16382279.html">
-    <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/71/9780226717647.jpg" alt="The Idea of Hegel’s Science of Logic by Stanley Rosen" />
-  </a>
-  <a href="http://www.thepress.purdue.edu/titles/format/9781557532572">
-    <img src="./images/houlgate.jpg" alt="The Opening of Hegel's Logic by Stephen Houlgate" />
-  </a>
-  <a href="https://www.cambridge.org/core/books/analytic-philosophy-and-the-return-of-hegelian-thought/CF8B127618B9BA8E6C8C49C4F01F37F5">
-    <img src="https://m.media-amazon.com/images/P/0521172349.01._SCLZZZZZZZ_SX500_.jpg" alt="Analytic Philosophy and the Return of Hegelian Thought by Paul Redding" />
-  </a>
-  <a href="https://nupress.northwestern.edu/9780810143760/hegels-anthropology/">
-    <img src="https://northwest-press-us.imgix.net/covers/9780810143760.jpg?auto=format&w=298&dpr=2&q=20" alt="Hegel's Anthropology: Life, Psyche, and Second Nature by Allegra de Laurentiis" />
-  </a>
-  <a href="https://www.cornellpress.cornell.edu/book/9780801438721/hegel-and-the-hermetic-tradition/#bookTabs=1">
-    <img src="https://m.media-amazon.com/images/P/0801474507.01._SCLZZZZZZZ_SX500_.jpg" alt="Hegel andthe Hermetic Tradition by Glenn Alexander Magee">
-  </a>
-  <!-- <a href="https://www.sunypress.edu/p-1886-the-heterodox-hegel.aspx"> -->
-  <!--   <img src="https://www.sunypress.edu/images/Product/large/52970_cov.jpg" alt="The Heterodox Hegel by Cyril O'Regan"> -->
-  <!-- </a> -->
-  <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo29203261.html"> -->
-  <!--   <img src="https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/70/9780226703411.jpg/jcr:content/9780226703411.jpg" alt="Hegel's Realm of Shadows by Robert Pippin" /> -->
-  <!-- </a> -->
-</div>
-
-<h4>Ancient Philosophy and Christianity</h4>
-
-<div class="books">
-  <a href="https://www.hackettpublishing.com/philosophy/complete-works">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/51MzSp6UPlL._SX331_BO1,204,203,200_.jpg" alt="The Complete Works of Plato, translated by John M. Cooper" />
-  </a>
-  <a href="https://press.princeton.edu/books/hardcover/9780691016504/complete-works-of-aristotle-volume-1">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41QaR-1bbfL._SX329_BO1,204,203,200_.jpg" alt="Complete Works of Aristotle, Volume One, edited by Jonathan Barnes" />
-  </a>
-  <a href="https://press.princeton.edu/books/hardcover/9780691016511/complete-works-of-aristotle-volume-2">
-    <img src="https://m.media-amazon.com/images/I/41M+9T7ZHsL.jpg" alt="Complete Works of Aristotle, Volume Two, edited by Jonathan Barnes" />
-  </a>
-  <a href="https://global.oup.com/academic/product/the-new-oxford-annotated-bible-with-apocrypha-9780190276072">
-    <img src="https://fdslive.oup.com/covers/gab/550-550-72-jpg-RGB-85/9780190276072.jpg" alt="The New Oxford Annotated Bible with Apocrypha" />
-  </a>
-  <a href="https://www.shambhala.com/the-gnostic-bible-647.html">
-    <img src="https://www.shambhala.com/media/fishpig/webp/catalog/product/optimized/4/3/43ee043b7799edb0e4b6573eae5b803bd24dfd5f4c7b807af76ab86af870bd2e/9781590306314.webp" alt="The Gnostic Bible, edited by Barnstone & Meyer" />
-  </a>
-  <a href="https://www.cambridge.org/us/academic/subjects/philosophy/philosophy-texts/plotinus-enneads?format=HB">
-    <img src="https://m.media-amazon.com/images/P/1107001773.01._SCLZZZZZZZ_SX500_.jpg" alt="The Enneads by Plotinus" />
-  </a>
-  <a href="https://global.oup.com/academic/product/the-elements-of-theology-9780198140979?cc=us&lang=en&">
-    <img src="https://fdslive.oup.com/covers/gab/550-550-72-jpg-RGB-85/9780198140979.jpg" alt="Elements of Theology by Proclus" />
-  </a>
-</div>
-
-<h4>Modern Philosophy</h4>
-
-<div class="books">
-  <a href="https://www.cambridge.org/core/books/philosophical-writings-of-descartes/618B16C4C0116CBB0B39211F93E2BCB3">
-    <img src="https://assets.cambridge.org/97805212/88088/cover/9780521288088.jpg" alt="The Philosophical Writings of Descartes, Volume II, translated by John Cottingham, Robert Stoothoff, and Dugald Murdoch" />
-  </a>
-  <a href="https://www.hackettpublishing.com/philosophy/three-dialogues-between-hylas-and-philonous">
-    <img src="https://pictures.abebooks.com/inventory/4432106376.jpg" alt="Three Dialogues Between Hylas and Philonous by George Berkeley" />
-  </a>
-  <a href="https://www.cambridge.org/core/books/critique-of-pure-reason/259C2355B74458963EC285F53337AAF0">
-    <img src="https://assets.cambridge.org/97805216/57297/cover/9780521657297.jpg" alt="Critique of Pure Reason by Immanuel Kant" />
-  </a>
-  <a href="https://www.cambridge.org/core/books/critique-of-the-power-of-judgment/3705CD4E7C5C7B1CE079AFA9B924122E">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41f-iYqv9ML._SX331_BO1,204,203,200_.jpg" alt="Critique of the Power of Judgment by Immanuel Kant" />
-  </a>
-  <!-- <a href="https://www.nebraskapress.unl.edu/university-of-nebraska-press/9780803272712/"> -->
-    <!--   <img src="https://unebraskapress-us.imgix.net/covers/9780803272712.jpg?auto=format&w=298" alt="Lectures on the History of Philosophy by Georg Wilhelm Friedrich Hegel" /> -->
-    <!-- </a> -->
-  <a href="https://www.cambridge.org/gb/academic/subjects/philosophy/nineteenth-century-philosophy/georg-wilhelm-friedrich-hegel-encyclopedia-philosophical-sciences-basic-outline-part-1">
-    <img src="https://assets.cambridge.org/97805218/29144/cover/9780521829144.jpg" alt="Encyclopedia of the Philosophical Sciences in Basic Outline, Part I: Science of Logic by Georg Wilhelm Friedrich Hegel" />
-  </a>
-  <a href="https://global.oup.com/academic/product/hegels-philosophy-of-nature-9780199272679">
-    <img src="https://fdslive.oup.com/covers/gab/180-0-72-jpg-RGB-85/9780199272679.jpg" alt="Hegel's Philosophy of Nature by Georg Wilhelm Friedrich Hegel" />
-  </a>
-  <a href="https://www.oxfordscholarlyeditions.com/view/10.1093/actrade/9780199299515.book.1/actrade-9780199299515-book-1">
-    <img src="https://www.oxfordscholarlyeditions.com/view/covers/9780199299515.jpg" alt="Hegel's Philosophy of Mind by Georg Wilhelm Friedrich Hegel" />
-  </a>
-  <a href="https://www.cambridge.org/highereducation/books/hegel-elements-of-the-philosophy-of-right/09AE6110FE96266A206924435BAF85C5#overview">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41kquZAfzIL.jpg" alt="Elements of the Philosophy of Right by Georg Wilhelm Friedrich Hegel" />
-  </a>
-</div>
-
-<h4>School of Suspicion</h4>
-<div class="books">
-  <!-- <a href="https://www.intpubnyc.com/product/capital-the-process-of-capitalist-production-vol-01/"> -->
-    <!--   <img src="https://www.lwbooks.co.uk/sites/default/files/styles/product_image/public/cover-image/9780853159797.jpg?itok=wjdXS_cJ" alt="Capital Vol. 1 by Karl Marx" /> -->
-    <!-- </a> -->
-  <a href="https://wwnorton.com/books/9780393090406">
-    <img src="https://cdn.wwnorton.com/dam_booktitles/604/img/cover/9780393090406_300.jpeg" alt="The Marx-Engels Reader" />
-  </a>
-  <a href="https://www.penguinrandomhouse.com/books/121929/basic-writings-of-nietzsche-by-friedrich-nietzsche">
-    <img src="https://images2.penguinrandomhouse.com/cover/9780679783398" alt="Basic Writings of Nietzsche, translated by Walter Kaufmann" />
-  </a>
-  <a href="https://www.penguinrandomhouse.com/books/321142/the-portable-nietzsche-by-friedrich-nietzsche/">
-    <img src="https://images2.penguinrandomhouse.com/cover/9780140150629" alt="The Portable Nietzsche, translated by Walter Kaufmann" />
-  </a>
-  <!-- <a href="https://www.penguinrandomhouse.ca/series/CPW/the-complete-psychological-works-of-sigmund-freud"> -->
-  <!--   <img src="https://images.randomhouse.com/cover/9780099426523" alt="The Complete Psychological Works of Sigmund Freud" /> -->
-  <!-- </a> -->
-  <a href="https://wwnorton.com/books/9780393314038">
-    <img src="https://cdn.wwnorton.com/dam_booktitles/830/img/cover/9780393314038_300.jpeg" alt="The Freud Reader, edited by Peter Gay" />
-  </a>
-  <a href="https://www.harpercollins.com/products/being-and-time-martin-heidegger?variant=32154071597090">
-    <img src="./images/being-and-time.jpg" alt="Being and Time by Martin Heidegger, translated by John Macquarrie and Edward Robinson" />
-  </a>
-  <a href="https://wwnorton.com/books/9780393329254">
-    <img src="https://cdn.wwnorton.com/dam_booktitles/452/img/cover/9780393329254_300.jpeg" alt="Écrits by Jacques Lacan, translated by Bruce Fink" />
-  </a>
-  <a href="https://press.uchicago.edu/ucp/books/book/chicago/W/bo27619783.html">
-    <img src="./images/writing_and_difference.jpg" alt="Writing and Difference by Jacques Derrida" />
-  </a>
-  <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo24847024.html"> -->
-  <!--   <img src="/images/margins_of_philosophy.png" alt="Margins of Philosophy by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <a href="https://press.uchicago.edu/ucp/books/book/chicago/D/bo27619136.html">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41q6PtPloiL._SX331_BO1,204,203,200_.jpg" alt="Dissemination by Jacques Derrida" />
-  </a>
-  <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/G/bo27619208.html"> -->
-  <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226502977.jpg" alt="The Gift of Death by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.versobooks.com/books/3721-the-politics-of-friendship"> -->
-  <!--   <img src="https://cdn-ed.versobooks.com/images/000015/505/9781788738590-6684da65f98f3d21af45c61c3b1e590c.jpg" alt="Politics of Friendship by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/G/bo27619298.html"> -->
-  <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226504315.jpg" alt="Given Time: I. Counterfeit Money by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.sup.org/books/title/?id=2568"> -->
-  <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2568.jpg" alt="Aporias by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://press.uchicago.edu/ucp/books/book/chicago/A/bo27619045.html"> -->
-  <!--   <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/50/9780226502359.jpg" alt="Archive Fever by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.sup.org/books/title/?id=2569"> -->
-  <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2569.jpg" alt="Points...: Interviews, 1974-1994 by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.fordhampress.com/9780823227914/the-animal-that-therefore-i-am/"> -->
-  <!--   <img src="https://fordhampress-us.imgix.net/covers/9780823227914.jpg?auto=format&w=298" alt="The Animal That Therefore I Am by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.sup.org/books/title/?id=6908"> -->
-  <!--   <img src="https://www.sup.org/img/covers/med_large/pid_6908.jpg" alt="Rogues: Two Essays on Reason by Jacques Derrida" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.fordhampress.com/9780823228751/derrida-vis-a-vis-lacan/"> -->
-  <!--   <img src="https://fordhampress-us.imgix.net/covers/9780823228751.jpg?auto=format&w=298" alt="Derrida Vis-à-vis Lacan: Interweaving Deconstruction and Psychoanalysis by Andrea Hurst" /> -->
-  <!-- </a> -->
-</div>
-<h4>Rational Conspiracy</h4>
-<div class="books">
-  <!-- <a href="https://www.sunypress.edu/p-2019-being-and-the-between.aspx"> -->
-  <!--   <img src="https://www.sunypress.edu/images/Product/large/53103_cov.jpg" alt="Being and the Between by William Desmond" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://mitpress.mit.edu/books/parallax-view"> -->
-  <!--   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/The_Parallax_View_cover.jpg" alt="The Parallax View by Slavoj Žižek" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.wiley.com/en-us/Decadence+of+Industrial+Democracies-p-9780745648101"> -->
-  <!--   <img src="https://media.wiley.com/product_data/coverImage300/96/07456480/0745648096.jpg" alt="Decadence of Industrial Democracies by Bernard Stiegler" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.wiley.com/en-us/Liquid+Modernity-p-9780745624099"> -->
-  <!--   <img src="https://media.wiley.com/product_data/coverImage300/9X/07456240/074562409X.jpg" alt="Liquid Modernity by Zygmunt Bauman" /> -->
-  <!-- </a> -->
-  <a href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41ySrRF+tXL._SX331_BO1,204,203,200_.jpg" alt="Industrial Society and Its Future by Theodore Kaczynski">
-  </a>
- <!--  <a href="https://www.versobooks.com/books/1523-less-than-nothing"> -->
- <!--    <img src="https://cdn-ed.versobooks.com/images/000002/721/Verso_9781844678976_Less_Than_Nothing__300dpi_CMYK__Site-e82b500ae67a190707584b92b703e7de.jpeg" alt="Less Than Nothing -->
- <!-- by Slavoj Žižek" /> -->
- <!--  </a> -->
-  <!-- <a href="https://www.wiley.com/en-us/Decadence+of+Industrial+Democracies-p-9780745648101"> -->
-  <!--   <img src="https://media.wiley.com/product_data/coverImage300/96/07456480/0745648096.jpg" alt="Decadence of Industrial Democracies: Disbelief and Discredit by Bernard Stiegler" /> -->
-  <!-- </a> -->
-  <a href="https://www.wiley.com/en-us/Uncontrollable+Societies+of+Disaffected+Individuals%3A+Disbelief+and+Discredit%2C+Volume+2-p-9780745648125">
-    <img src="https://media.wiley.com/product_data/coverImage300/18/07456481/0745648118.jpg" alt="Uncontrollable Societies of Disaffected Individuals: Disbelief and Discredit by Bernard Stiegler" />
-  </a>
-  <!-- <a href="https://www.wiley.com/en-us/The+Lost+Spirit+of+Capitalism%3A+Disbelief+and+Discredit%2C+Volume+3-p-9780745648149"> -->
-  <!--   <img src="https://media.wiley.com/product_data/coverImage300/34/07456481/0745648134.jpg" alt="The Lost Spirit of Capitalism: Disbelief and Discredit, Volume 3 by Bernard Stiegler" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://yalebooks.yale.edu/book/9780300240023/why-liberalism-failed"> -->
-  <!--   <img src="https://yalebooks.yale.edu/sites/default/files/styles/book_jacket/public/imagecache/external/48d352398cf845a08551235085779d9c.jpg" alt="Why Liberalism Failed by Patrick Deneen" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://global.oup.com/academic/product/hegels-concept-of-life-9780190947613"> -->
-  <!--   <img src="https://fdslive.oup.com/covers/gab/180-0-72-jpg-RGB-85/9780190947613.jpg" alt="Hegel's Concept of Life by Karen Ng" /> -->
-  <!-- </a> -->
-  <!-- <a href="https://www.wiley.com/en-us/The+Lost+Spirit+of+Capitalism%3A+Disbelief+and+Discredit%2C+Volume+3-p-9780745648149"> -->
-  <!--   <img src="https://media.wiley.com/product_data/coverImage300/34/07456481/0745648134.jpg" alt="The Lost Spirit of Capitalism: Disbelief and Discredit by Bernard Stiegler" /> -->
-  <!-- </a> -->
-  <a href="https://www.versobooks.com/books/2001-absolute-recoil">
-    <img src="https://cdn-ed.versobooks.com/images/000005/724/9781784781996-fa84cec045022711da74fd8eb05561f1.jpg" alt="Absolute Recoil by Slavoj Žižek" />
-  </a>
-  <!-- <a href="https://www.sup.org/books/title/?id=2003"> -->
-  <!--   <img src="https://www.sup.org/img/covers/med_large/pid_2003.jpg" alt="Homo Sacer: Sovereign Power and Bare Life by Giorgio Agamben" /> -->
-  <!-- </a> -->
-  <a href="https://rowman.com/ISBN/9781538157596/Where-Are-We-Now-The-Epidemic-as-Politics">
-    <img src="https://rowman.com/L/15/381/9781538157596.jpg" alt="Where Are We Now? by Giorgio Agamben" />
-  </a>
-  <a href="https://shop.davidicke.com/us/product/everything-you-need-to-know-but-have-never-been-told-by-david-icke/">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/518RXsNGZ6L.jpg" alt="Everything You Need To Know But Have Never Been Told By David Icke" />
-  </a>
-  <a href="https://childrenshealthdefense.org/store/the-real-anthony-fauci-big-pharmas-global-war-on-democracy-humanity-and-public-health/">
-    <img src="https://childrenshealthdefense.org/wp-content/uploads/real-anthony-fauci-book-robert-f-kennedy-jr.jpg" alt="The Real Anthony Fauci By Robert F. Kennedy, Jr." />
-  </a>
-</div>
-<br />
-
-      </main>
-      <footer>
-        <hr />
-        <br />
-        <div id="bottomMsg">
-          Don't forget to subscribe to the newsletter in the navigation menu!
-        </div>
-        <div id="bottomNav">
-          <div>Don't forget to subscribe to the newsletter below!</div>
-          <br />
-          <nav>
-            <div><a href="./">Home</a></div>
-            <div><a href="./about/">About</a></div>
-            <div><a href="./contact/">Contact</a></div>
-            <div><a href="./thesis/">Thesis</a></div>
-            <div><a href="./archive/">Archive</a></div>
-            <div><a href="./lexicon/">Lexicon</a></div>
-          </nav>
-          <br />
-          Feed: <a href="./rss.xml">RSS</a> /
-          <a href="./atom.xml">Atom</a>
-          <!-- <br /> -->
-          <!-- <br /> -->
-          <!-- Twitter: <a href="https://twitter.com/colemangariety">@colemangariety</a> -->
-          <br />
-          <br />
-          Monthly Newsletter<br />(join 180+ subscribers):
-<form class="mailingList" onsubmit="return false;">
-  <input type="text" name="email" class="emailField" placeholder="you@gmail.com" />
-  <button type="submit">Join</button>
-</form>
-
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>
