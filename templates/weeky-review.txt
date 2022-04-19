@@ -1,0 +1,27 @@
+---
+Week Ending: YYYY-MM-DD
+Project(s): [Name/names of projects you're working on]
+Type of Recap: Personal/Freelance/Day Job
+---
+
+WHAT WE TALKED ABOUT
+
+[add short paragraph or bullet list]
+
+WHAT I DIDN'T DO/WASN'T ABLE TO DO
+
+[add short paragraph or bullet list]
+
+WHAT WENT RIGHT
+
+[add short paragraph or bullet list]
+
+WHAT WENT WRONG
+
+[add short paragraph or bullet list]
+
+WHAT I REALIZED AFTER
+
+IDEAS FOR IMPROVEMENT
+
+[add short paragraph or bullet list]
